@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 
 public class DepartmentDTO {
 
-    @NotBlank
+    @NotNull
     private String nome;
 
     @NotNull
