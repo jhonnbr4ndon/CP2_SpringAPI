@@ -14,6 +14,7 @@ public class DepartmentService {
     @Autowired
     private DepartmentRepository departmentRepository;
     public Department criarDepartment(Department department) {
+
         return departmentRepository.save(department);
     }
 
@@ -41,6 +42,7 @@ public class DepartmentService {
     }
 
     public Department encontrarDepartamento(String nome) {
+
         return departmentRepository.encontrarDepartamento(nome);
     }
 }
